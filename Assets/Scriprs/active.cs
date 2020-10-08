@@ -5,11 +5,26 @@ using UnityEngine;
 public class active : MonoBehaviour
 {
     public Material lightMaterials;
-    public Material Materials;
+    public Material[] Materials;
     private MeshRenderer color;
     public Var1 var1;
     private Rigidbody rd;
     public GameObject[] player;
+    private MeshRenderer c0;
+    private MeshRenderer c1;
+    private MeshRenderer c2;
+    private MeshRenderer c3;
+    private MeshRenderer c4;
+    private MeshRenderer c5;
+    private MeshRenderer c6;
+    private MeshRenderer c7;
+    private MeshRenderer c8;
+    private MeshRenderer c9;
+    private MeshRenderer c10;
+    private MeshRenderer c11;
+    private MeshRenderer c12;
+    private MeshRenderer c13;
+    private MeshRenderer c14;
     private Var1 i0;
     private Var1 i1;
     private Var1 i2;
@@ -46,6 +61,7 @@ public class active : MonoBehaviour
     {
         var1 = GetComponent<Var1>();
         rd = GetComponent<Rigidbody>();
+        color = GetComponent<MeshRenderer>();
 
         i0 = player[0].GetComponent<Var1>();
         i1 = player[1].GetComponent<Var1>();
@@ -78,9 +94,26 @@ public class active : MonoBehaviour
         r12 = player[12].GetComponent<Rigidbody>();
         r13 = player[13].GetComponent<Rigidbody>();
         r14 = player[14].GetComponent<Rigidbody>();
-        color = GetComponent<MeshRenderer>();
+
+        c0 = player[0].GetComponent<MeshRenderer>();
+        c1 = player[1].GetComponent<MeshRenderer>();
+        c2 = player[2].GetComponent<MeshRenderer>();
+        c3 = player[3].GetComponent<MeshRenderer>();
+        c4 = player[4].GetComponent<MeshRenderer>();
+        c5 = player[5].GetComponent<MeshRenderer>();
+        c6 = player[6].GetComponent<MeshRenderer>();
+        c7 = player[7].GetComponent<MeshRenderer>();
+        c8 = player[8].GetComponent<MeshRenderer>();
+        c9 = player[9].GetComponent<MeshRenderer>();
+        c10 = player[10].GetComponent<MeshRenderer>();
+        c11 = player[11].GetComponent<MeshRenderer>();
+        c12 = player[12].GetComponent<MeshRenderer>();
+        c13 = player[13].GetComponent<MeshRenderer>();
+        c14 = player[14].GetComponent<MeshRenderer>();
+
 
     }
+
     private void OnMouseDown()
     {
         i0.enabled = false;
@@ -115,9 +148,25 @@ public class active : MonoBehaviour
         r13.isKinematic = true;
         r14.isKinematic = true;
 
+        c0.material = Materials[2];
+        c1.material = Materials[2];
+        c2.material = Materials[2];
+        c3.material = Materials[2];
+        c4.material = Materials[2];
+        c5.material = Materials[1];
+        c6.material = Materials[1];
+        c7.material = Materials[1];
+        c8.material = Materials[1];
+        c9.material = Materials[0];
+        c10.material = Materials[0];
+        c11.material = Materials[0];
+        c12.material = Materials[0];
+        c13.material = Materials[0];
+        c14.material = Materials[1];
+
+
         var1.enabled = true;
         rd.isKinematic = false;
-
         color.material = lightMaterials;
     }
 }
