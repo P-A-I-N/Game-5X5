@@ -416,8 +416,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!4 &235760561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6270736575043305825, guid: fda09cd4a935bf34499e226407ad0b9e,
@@ -494,8 +494,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 81}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -60.7, y: 81}
+  m_SizeDelta: {x: 321.36768, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &479161789
 MonoBehaviour:
@@ -516,11 +516,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You need to arrange blocks        in three columns. Red blocks in left
-    column, green blocks in central column and blue blocks in right column\r\n\r\nThe
-    color for each column displayed above with a sphere.\r\n\r\nControls:\r\nleft
-    click - block selection \r\nSelected block can be moved with arrow keys or with
-    WASD"
+  m_text: "You need to arrange blocks in three columns. Red blocks in left column,
+    green blocks in central column and blue blocks in right column\r\n\r\nThe color
+    for each column displayed above with a sphere.\r\n\r\nControls:\r\nleft click
+    - block selection \r\nSelected block can be moved with arrow keys or with WASD"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -547,8 +546,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 17.58
+  m_fontSizeBase: 17.58
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -583,7 +582,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -44.282867, y: 3.0866966, z: -178.77142, w: -13.97136}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -840,7 +839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.199997, y: -1.5999985}
+  m_AnchoredPosition: {x: -2.2000122, y: -1.6000061}
   m_SizeDelta: {x: 30.563934, y: 29}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &548311135
@@ -1325,8 +1324,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.7, y: -17.4}
-  m_SizeDelta: {x: 243.16315, y: 239.18115}
+  m_AnchoredPosition: {x: 0.1, y: 0.4}
+  m_SizeDelta: {x: 573.52527, y: 509.04413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &930547496
 MonoBehaviour:
@@ -4371,6 +4370,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2065194973}
     m_Modifications:
+    - target: {fileID: -4008335591316679175, guid: 5c3fe9d0233c21148920b1c8b624233d,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2178737347635335263, guid: 5c3fe9d0233c21148920b1c8b624233d,
         type: 3}
       propertyPath: player.Array.data[1]
@@ -4510,6 +4514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892099481309028086, guid: 5c3fe9d0233c21148920b1c8b624233d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9164393982589256764, guid: 5c3fe9d0233c21148920b1c8b624233d,
         type: 3}

@@ -5,12 +5,7 @@ using UnityEngine;
 public class Var1 : MonoBehaviour
 {
     public float Speed = 1f;
-    private Rigidbody rb;
 
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
     void FixedUpdate()
     {
         MovementLogic();
