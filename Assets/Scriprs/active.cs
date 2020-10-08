@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class active : MonoBehaviour
 {
+    public Material lightMaterials;
+    public Material Materials;
+    private MeshRenderer color;
     public Var1 var1;
     private Rigidbody rd;
     public GameObject[] player;
@@ -37,11 +40,13 @@ public class active : MonoBehaviour
     private Rigidbody r12;
     private Rigidbody r13;
     private Rigidbody r14;
-    // Start is called before the first frame update
+ 
+
     void Start()
     {
         var1 = GetComponent<Var1>();
         rd = GetComponent<Rigidbody>();
+
         i0 = player[0].GetComponent<Var1>();
         i1 = player[1].GetComponent<Var1>();
         i2 = player[2].GetComponent<Var1>();
@@ -57,6 +62,7 @@ public class active : MonoBehaviour
         i12 = player[12].GetComponent<Var1>();
         i13 = player[13].GetComponent<Var1>();
         i14 = player[14].GetComponent<Var1>();
+
         r0 = player[0].GetComponent<Rigidbody>();
         r1 = player[1].GetComponent<Rigidbody>();
         r2 = player[2].GetComponent<Rigidbody>();
@@ -72,6 +78,8 @@ public class active : MonoBehaviour
         r12 = player[12].GetComponent<Rigidbody>();
         r13 = player[13].GetComponent<Rigidbody>();
         r14 = player[14].GetComponent<Rigidbody>();
+        color = GetComponent<MeshRenderer>();
+
     }
     private void OnMouseDown()
     {
@@ -90,6 +98,7 @@ public class active : MonoBehaviour
         i12.enabled = false;
         i13.enabled = false;
         i14.enabled = false;
+
         r0.isKinematic = true;
         r1.isKinematic = true;
         r2.isKinematic = true;
@@ -108,5 +117,7 @@ public class active : MonoBehaviour
 
         var1.enabled = true;
         rd.isKinematic = false;
+
+        color.material = lightMaterials;
     }
 }

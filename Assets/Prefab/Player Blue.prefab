@@ -137,6 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dabe43ba6c2fe1f41befb645a2e51b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightMaterials: {fileID: 2100000, guid: 5147ec093a794754cb53899ffed2a335, type: 2}
+  Materials: {fileID: 2100000, guid: cf5c031071674d746aca950e4442734e, type: 2}
   var1: {fileID: 0}
   player:
   - {fileID: 0}
